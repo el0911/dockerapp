@@ -10,12 +10,12 @@ workflows:
   welcome:
     # Run the welcome/run job in its own container
     jobs:
-      build:
+  build:
+    working_directory: ~/mern-starter
+    docker:
+      - image: circleci/node:4.8.2
+    steps:
+        - checkout
+        - run: npm install
+        - run: npm test
 
-        docker: 
-          #specify docker image
-          - image: -circleci/node:7.10
-        steps:
-          - checkout
-          - run: npm install
-          - run: npm test
