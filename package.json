@@ -5,6 +5,9 @@
   "author": "Sammy the Shark <sammy@example.com>",
   "license": "MIT",
   "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
   "keywords": [
     "nodejs",
     "bootstrap",
@@ -12,5 +15,10 @@
   ],
   "dependencies": {
     "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0"
   }
+
+  
 }
